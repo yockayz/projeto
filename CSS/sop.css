@@ -1,0 +1,374 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    margin-bottom: 280px; /* Adicione a altura do footer como margem inferior */
+}
+
+main {
+    position: relative;
+}
+  
+#container_sop{
+    background: url("../GIFS/sopfundo.gif") center top no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+}
+
+#container_sop::after{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img_fundo img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+.titulo{
+    /* tipografica */
+    font-family: Carme;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--cor_12);
+
+    /* layout */
+    text-align: center;
+    width: 825px;
+    height: 60px;
+}
+
+.linha{
+    position: absolute;
+    text-align: center;
+    border-top: 1px solid var(--cor_12);
+    width: 825px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.t_curso{
+    /* tipografia */
+    color: var(--cor_12);
+    font-family: Carme;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    /* layout */
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    
+    
+}
+
+.t_senai{
+    /* tipografia */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 90px;
+    color: var(--cor_12);
+
+    /* layout */
+    text-align: center;
+    padding-left: 100px;
+    margin: 0;  
+}
+
+.caixa_texto{
+    /* layout */
+    width: 765px;
+    height: 400px;
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    /* Style */
+    border-radius: 4px;
+    background: #212121a9;
+    box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+/* caixa de dialogo */
+.titulo_caixa{
+    /* Layout */
+    width: 390px;
+    height: 55px;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.titulo_caixa::before{
+    content: "";
+    background: #486FF3;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 5px;
+    
+}
+
+.texto_caixa{
+    /* Layout */
+    width: 680px;
+    height: 280px;
+    padding-left: 30px;
+
+     /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px; /* 166.667% */
+}
+
+.windows img {
+    text-align: center;
+    top: 100px;
+    margin-top: 100px;
+    width: 770px;
+    height: auto;
+    flex-shrink: 0;
+    fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    padding-bottom: 100px;
+
+    display: block;
+    margin: 0 auto;
+    /* clip-path: polygon(0 0, 0 0, 0 0, 0 0); Define a forma angular */
+}
+
+/* TITULO 2  PROJETO ORÇAMENTARIO DE UM HOSPITAL*/
+.titulo2{
+      /* tipografica */
+      margin-top: 1500px;
+      font-family: Carme;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: var(--cor_12);
+  
+      /* layout */
+      text-align: center;
+      width: 825px;
+      height: 60px;
+      margin-left: 260px;
+      margin-bottom: 80px;
+}
+
+.linha2{
+    text-align: center;
+    border-top: 1px solid var(--cor_12);
+    width: 825px;
+    height: 5px;
+    margin-left: 260px;
+    margin-bottom: 20px;
+}
+
+.t_sop{
+     /* tipografia */
+     font-family: Roboto;
+     font-size: 48px;
+     font-style: normal;
+     font-weight: 200;
+     line-height: normal;
+     letter-spacing: 90px;
+     color: var(--cor_12);
+ 
+     /* layout */
+     text-align: center;
+     padding-left: 160px;
+     margin-top: 20px; 
+     margin-bottom: 20px;
+     margin-left: -60px;
+}
+
+/* img packet tracer */
+.packet_tracer img {
+    text-align: center;
+    top: 2500px;
+    width: 900px;    
+    height: auto;
+    margin-bottom: 100px;
+    margin-left: 330px;
+    margin-bottom: 100px;
+    
+    
+    /* tentando deixar no centro */
+    align-items: center;
+    justify-content: center;
+
+    display: block;
+    margin: 0 auto;
+}
+    /* text-align: center;
+    fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    padding-bottom: 100px; */
+
+/* caixa de dialogo 2 */
+.caixa_texto2{
+    /* layout */
+    width: 765px;
+    height: 400px;
+    position: absolute;
+    top: 2800px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    /* Style */
+    border-radius: 4px;
+    background: #212121a9;
+    box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.titulo_caixa2{
+    /* Layout */
+    width: 390px;
+    height: 55px;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.titulo_caixa2::before{
+    content: "";
+    background: #486FF3;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 5px;
+
+}
+
+.texto_caixa2{
+    /* Layout */
+    width: 680px;
+    height: 280px;
+    padding-left: 30px;
+
+     /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px; /* 166.667% */
+}
+
+/* caixa de dialogo 3 */
+.caixa_texto3{
+    /* layout */
+    width: 765px;
+    height: 400px;
+    position: absolute;
+    top: 3600px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    /* Style */
+    border-radius: 4px;
+    background: #212121a9;
+    box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+
+.titulo_caixa3{
+    /* Layout */
+    width: 390px;
+    height: 55px;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 3;
+}
+
+.titulo_caixa3::before{
+    content: "";
+    background: #486FF3;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 5px;
+    z-index: 1;
+    
+}
+
+.texto_caixa3{
+    /* Layout */
+    width: 680px;
+    height: 280px;
+    padding-left: 30px;
+
+     /* Tipografia */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px; /* 166.667% */
+    z-index: 3;
+}
+
+.winxp img {
+    position: absolute;
+    text-align: center;
+    top: 3600px;
+    margin: 0;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    opacity: 60%;
+    z-index: 1;
+    height: 900px;
+    width: 100%;
+    /*     max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura do contêiner */
+    /*height: auto; /* Para manter a proporção da imagem */
+}
